@@ -34,7 +34,7 @@ class InToPostFix
 				{
 					int a;
 					a = checkThePrecedence(element);
-					if(a == 3)
+					if(a == 3) // element is of higher precedence:w
 						push(element);
 					else if(astack[TOS] != '(')
 					{
@@ -57,7 +57,7 @@ class InToPostFix
 				pop();// Remove the '(' from stack
 			}
 		}
-		//while(!(stackisEmpty()))
+		//while(!(stackisEmpty())):q
 		while(TOS != -1)
 		{
 			char temp = pop();
